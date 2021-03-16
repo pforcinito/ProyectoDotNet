@@ -1,0 +1,56 @@
+C:\Users\ForciPC\Desktop\My Proyects .Net\MyServiceWeb\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\ForciPC\Desktop\My Proyects .Net\MyServiceWeb\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\ForciPC\Desktop\My Proyects .Net\MyServiceWeb\bin\Debug\netcoreapp3.1\MyServiceWeb.exe
+C:\Users\ForciPC\Desktop\My Proyects .Net\MyServiceWeb\bin\Debug\netcoreapp3.1\MyServiceWeb.deps.json
+C:\Users\ForciPC\Desktop\My Proyects .Net\MyServiceWeb\bin\Debug\netcoreapp3.1\MyServiceWeb.runtimeconfig.json
+C:\Users\ForciPC\Desktop\My Proyects .Net\MyServiceWeb\bin\Debug\netcoreapp3.1\MyServiceWeb.runtimeconfig.dev.json
+C:\Users\ForciPC\Desktop\My Proyects .Net\MyServiceWeb\bin\Debug\netcoreapp3.1\MyServiceWeb.dll
+C:\Users\ForciPC\Desktop\My Proyects .Net\MyServiceWeb\bin\Debug\netcoreapp3.1\MyServiceWeb.pdb
+C:\Users\ForciPC\Desktop\My Proyects .Net\MyServiceWeb\obj\Debug\netcoreapp3.1\MyServiceWeb.csprojAssemblyReference.cache
+C:\Users\ForciPC\Desktop\My Proyects .Net\MyServiceWeb\obj\Debug\netcoreapp3.1\MyServiceWeb.AssemblyInfoInputs.cache
+C:\Users\ForciPC\Desktop\My Proyects .Net\MyServiceWeb\obj\Debug\netcoreapp3.1\MyServiceWeb.AssemblyInfo.cs
+C:\Users\ForciPC\Desktop\My Proyects .Net\MyServiceWeb\obj\Debug\netcoreapp3.1\MyServiceWeb.csproj.CoreCompileInputs.cache
+C:\Users\ForciPC\Desktop\My Proyects .Net\MyServiceWeb\obj\Debug\netcoreapp3.1\MyServiceWeb.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ForciPC\Desktop\My Proyects .Net\MyServiceWeb\obj\Debug\netcoreapp3.1\staticwebassets\MyServiceWeb.StaticWebAssets.Manifest.cache
+C:\Users\ForciPC\Desktop\My Proyects .Net\MyServiceWeb\obj\Debug\netcoreapp3.1\staticwebassets\MyServiceWeb.StaticWebAssets.xml
+C:\Users\ForciPC\Desktop\My Proyects .Net\MyServiceWeb\obj\Debug\netcoreapp3.1\scopedcss\bundle\MyServiceWeb.styles.css
+C:\Users\ForciPC\Desktop\My Proyects .Net\MyServiceWeb\obj\Debug\netcoreapp3.1\MyServiceWeb.RazorTargetAssemblyInfo.cache
+C:\Users\ForciPC\Desktop\My Proyects .Net\MyServiceWeb\obj\Debug\netcoreapp3.1\MyServiceWeb.dll
+C:\Users\ForciPC\Desktop\My Proyects .Net\MyServiceWeb\obj\Debug\netcoreapp3.1\MyServiceWeb.pdb
+C:\Users\ForciPC\Desktop\My Proyects .Net\MyServiceWeb\obj\Debug\netcoreapp3.1\MyServiceWeb.genruntimeconfig.cache
+C:\Users\ForciPC\Desktop\My Proyects .Net\MyServiceWeb\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\ForciPC\Desktop\My Proyects .Net\MyServiceWeb\bin\Debug\netcoreapp3.1\Microsoft.DotNet.InternalAbstractions.dll
+C:\Users\ForciPC\Desktop\My Proyects .Net\MyServiceWeb\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+C:\Users\ForciPC\Desktop\My Proyects .Net\MyServiceWeb\bin\Debug\netcoreapp3.1\Microsoft.Extensions.PlatformAbstractions.dll
+C:\Users\ForciPC\Desktop\My Proyects .Net\MyServiceWeb\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\ForciPC\Desktop\My Proyects .Net\MyServiceWeb\bin\Debug\netcoreapp3.1\Swashbuckle.Swagger.dll
+C:\Users\ForciPC\Desktop\My Proyects .Net\MyServiceWeb\obj\Debug\netcoreapp3.1\MyServiceWeb.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\ForciPC\Desktop\My Proyects .Net\MyServiceWeb\obj\Debug\netcoreapp3.1\MyServiceWeb.csproj.CopyComplete
+C:\Users\ForciPC\Desktop\ProyectoUtn-main\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\ForciPC\Desktop\ProyectoUtn-main\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\ForciPC\Desktop\ProyectoUtn-main\bin\Debug\netcoreapp3.1\MyServiceWeb.exe
+C:\Users\ForciPC\Desktop\ProyectoUtn-main\bin\Debug\netcoreapp3.1\MyServiceWeb.deps.json
+C:\Users\ForciPC\Desktop\ProyectoUtn-main\bin\Debug\netcoreapp3.1\MyServiceWeb.runtimeconfig.json
+C:\Users\ForciPC\Desktop\ProyectoUtn-main\bin\Debug\netcoreapp3.1\MyServiceWeb.runtimeconfig.dev.json
+C:\Users\ForciPC\Desktop\ProyectoUtn-main\bin\Debug\netcoreapp3.1\MyServiceWeb.dll
+C:\Users\ForciPC\Desktop\ProyectoUtn-main\bin\Debug\netcoreapp3.1\MyServiceWeb.pdb
+C:\Users\ForciPC\Desktop\ProyectoUtn-main\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\ForciPC\Desktop\ProyectoUtn-main\bin\Debug\netcoreapp3.1\Microsoft.DotNet.InternalAbstractions.dll
+C:\Users\ForciPC\Desktop\ProyectoUtn-main\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+C:\Users\ForciPC\Desktop\ProyectoUtn-main\bin\Debug\netcoreapp3.1\Microsoft.Extensions.PlatformAbstractions.dll
+C:\Users\ForciPC\Desktop\ProyectoUtn-main\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\ForciPC\Desktop\ProyectoUtn-main\bin\Debug\netcoreapp3.1\Swashbuckle.Swagger.dll
+C:\Users\ForciPC\Desktop\ProyectoUtn-main\obj\Debug\netcoreapp3.1\MyServiceWeb.csprojAssemblyReference.cache
+C:\Users\ForciPC\Desktop\ProyectoUtn-main\obj\Debug\netcoreapp3.1\MyServiceWeb.AssemblyInfoInputs.cache
+C:\Users\ForciPC\Desktop\ProyectoUtn-main\obj\Debug\netcoreapp3.1\MyServiceWeb.AssemblyInfo.cs
+C:\Users\ForciPC\Desktop\ProyectoUtn-main\obj\Debug\netcoreapp3.1\MyServiceWeb.csproj.CoreCompileInputs.cache
+C:\Users\ForciPC\Desktop\ProyectoUtn-main\obj\Debug\netcoreapp3.1\MyServiceWeb.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\ForciPC\Desktop\ProyectoUtn-main\obj\Debug\netcoreapp3.1\MyServiceWeb.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ForciPC\Desktop\ProyectoUtn-main\obj\Debug\netcoreapp3.1\staticwebassets\MyServiceWeb.StaticWebAssets.Manifest.cache
+C:\Users\ForciPC\Desktop\ProyectoUtn-main\obj\Debug\netcoreapp3.1\staticwebassets\MyServiceWeb.StaticWebAssets.xml
+C:\Users\ForciPC\Desktop\ProyectoUtn-main\obj\Debug\netcoreapp3.1\scopedcss\bundle\MyServiceWeb.styles.css
+C:\Users\ForciPC\Desktop\ProyectoUtn-main\obj\Debug\netcoreapp3.1\MyServiceWeb.RazorTargetAssemblyInfo.cache
+C:\Users\ForciPC\Desktop\ProyectoUtn-main\obj\Debug\netcoreapp3.1\MyServiceWeb.csproj.CopyComplete
+C:\Users\ForciPC\Desktop\ProyectoUtn-main\obj\Debug\netcoreapp3.1\MyServiceWeb.dll
+C:\Users\ForciPC\Desktop\ProyectoUtn-main\obj\Debug\netcoreapp3.1\MyServiceWeb.pdb
+C:\Users\ForciPC\Desktop\ProyectoUtn-main\obj\Debug\netcoreapp3.1\MyServiceWeb.genruntimeconfig.cache
