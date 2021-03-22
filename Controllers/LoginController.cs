@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using MyServiceWeb.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,30 +12,52 @@ namespace MyServiceWeb.Controllers
     {
 
         [HttpGet]
-        [Route("getUser")]
-        public IActionResult GetUser()
-        {
-            User user = new User();
-            user.Id = 1;
-            user.Name = "Pablo";
-            user.Surname = "Forcinito";
-            user.Birthday = DateTime.Now;
-
-
-            //return Ok(user);
-            return StatusCode(400, user);
-        }
-
-        [HttpPost]
         [Route("login")]
-        public IActionResult login( User body)
+        public string Login()
         {
-            User user = new User();            
-            user.Name = body.Name;
-
-            return StatusCode(200, user);
+            return "hola mundo";
         }
-            
+
+        //[HttpPost]
+        //[Route("login")]
+        //public  async Task<ActionResult<User>> Login(User body)
+        //{
+        //    //User user = new User();
+        //    //user.Name = body.Name;
+
+        //    ////falta el await
+
+        //    //return  Ok(user);
+        //}
+
+        //[HttpPost]
+        //[Route("logOut")]
+        //public async Task<ActionResult<User>> LogOut(User body)
+        //{
+        //    //User user = new User();
+        //    //user.Name = body.Name;
+
+        //    ////falta el await
+
+        //    //return  Ok(user);
+        //}
+
+
+        //[HttpPost]
+        //[Route("signin")]
+        //public IActionResult SigIn(User body)
+        //{
+        //    return Ok(new User());
+        //}
+
+        //[HttpPost]
+        //[Route("signOut")]
+        //public IActionResult SigOut(User body)
+        //{
+        //    return Ok(new User());
+        //}
+
+
 
     }
 }
