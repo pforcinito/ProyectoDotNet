@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using MyServiceWeb.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,8 +7,26 @@ using System.Threading.Tasks;
 
 namespace MyServiceWeb.Controllers
 {
+    [ApiController]
+    [Route("[controller]")]
     public class UserController : ControllerBase
     {
+        private  MyABMContext _context;
+        public UserController(MyABMContext context)
+        {
+            _context = context;
+        }
+
+        [HttpGet]
+        [Route("{id}")]
+        public IActionResult GetUser(long id) {
+
+
+            var user = _context.Users.Find(id);
+            return Ok(user);
+ 
+        }
+
         //[HttpGet]
         //[Route("getUser")]
         //public IActionResult GetUser()

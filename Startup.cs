@@ -11,6 +11,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.OpenApi.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace MyServiceWeb
 {
@@ -27,6 +28,9 @@ namespace MyServiceWeb
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddDbContext<Models.MyABMContext>(options => {
+                options.UseSqlServer(Configuration.GetConnectionString("MyDB"));
+            });
             AddSwagger(services);
         }
 
