@@ -15,9 +15,9 @@ namespace MyServiceWeb.Controllers
     [Route("[controller]")]
     public class UserController : ControllerBase
     {
-        private readonly IService _service;
+        private readonly IUserService _service;
 
-        public UserController(IService service) => _service = service;
+        public UserController(IUserService service) => _service = service;
 
         [HttpGet]
         //[Route("{id}")]
@@ -26,6 +26,15 @@ namespace MyServiceWeb.Controllers
             IResponse response = await _service.Get(id);
 
             return  Ok(response); 
+        }
+
+        [HttpPost]
+        [Route("Edit")]
+        public async Task<IActionResult> EditUser(User user)
+        {
+            IResponse response = await _service.Edit(user);
+
+            return Ok(response);
         }
 
         //[HttpGet]

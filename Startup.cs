@@ -15,6 +15,7 @@ using Microsoft.EntityFrameworkCore;
 using MyServiceWeb.Interfaces;
 using MyServiceWeb.Services;
 using MyServiceWeb.Models;
+using MyServiceWeb.Factories;
 
 namespace MyServiceWeb
 {
@@ -31,12 +32,11 @@ namespace MyServiceWeb
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddDbContext<Models.MyABMContext>(options => {
+            services.AddDbContext<MyABMContext>(options => {
                 options.UseSqlServer(Configuration.GetConnectionString("MyDB"));
             });
 
-            services.AddTransient<IService, UserService>();
-           //services.AddTransient<IService<UserPost>, UserPostService>();
+            InyectionsFactory.IoC(services);
 
             AddSwagger(services);
         }

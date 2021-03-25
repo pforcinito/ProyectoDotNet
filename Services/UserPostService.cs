@@ -4,12 +4,12 @@ using System.Linq;
 using System.Threading.Tasks;
 using MyServiceWeb.Interfaces;
 using MyServiceWeb.ModelRequest;
-using MyServiceWeb.ModelResponse;
+using MyServiceWeb.Factories;
 using MyServiceWeb.Models;
 
 namespace MyServiceWeb.Services
 {
-    public class UserPostService : IService
+    public class UserPostService : IUserPostService
     {
 
         private readonly MyABMContext _context;
@@ -26,16 +26,27 @@ namespace MyServiceWeb.Services
             throw new NotImplementedException();
         }
 
-        public Task<IResponse> Edit(Request ob)
+        public Task<IResponse> Edit(UserPost ob)
         {
             throw new NotImplementedException();
         }
 
-        public Task<IResponse> Get(long id)
+        public async Task<IResponse> Get(long id)
         {
-            throw new NotImplementedException();
-        }
+            IResponse response;
 
+            try
+            {
+                var post = await _context.UserPosts.FindAsync(id);
+                response = GetResponse.Builder(0, "todo ok", post);
+            }
+            catch (Exception ex)
+            {
+                response = GetResponse.Builder(0, "todo mal", ex);
+            }
+
+            return response;
+        }
         public Task<IResponse> GetAll(long id)
         {
             throw new NotImplementedException();

@@ -4,13 +4,14 @@ using System.Linq;
 using System.Threading.Tasks;
 using MyServiceWeb.Interfaces;
 using MyServiceWeb.Models;
-using MyServiceWeb.ModelResponse;
+using MyServiceWeb.Factories;
 using MyServiceWeb.ModelRequest;
 using Microsoft.EntityFrameworkCore;
+using MyServiceWeb.Mapper;
 
 namespace MyServiceWeb.Services
 {
-    public class UserService : IService
+    public class UserService : IUserService
     {
         private readonly MyABMContext _context;
         public UserService(MyABMContext context)
@@ -23,30 +24,23 @@ namespace MyServiceWeb.Services
             throw new NotImplementedException();
         }
 
-        public Task<IResponse> DeleteAll()
-        {
-            throw new NotImplementedException();
-        }
-
-        public async Task<IResponse> Edit(Request ob)
+        public async Task<IResponse> Edit(User user)
         {
             IResponse response;
-            User user;
 
             try
             {
-                user = await _context.Users.FindAsync((User)ob.Object);
+                var Myuser = await _context.Users.FindAsync(user.IdUser);
+                UserMapper.Map(Myuser, user);
+               
+                _context.Entry(Myuser).State = EntityState.Modified;
+                await _context.SaveChangesAsync();
 
-                user = (User)ob.Object;
-
-                _context.SaveChanges();
-
-                response = GetResponse.Builder(0, "todo ok");
-
+                response = GetResponse.Builder(0, "The user was modified successfully");
             }
             catch(Exception ex)
             {
-                response = GetResponse.Builder(1, "todo mal", ex);
+                response = GetResponse.Builder(1, "The user was modified unsuccessfully", ex);
             }
 
             return response;
@@ -55,7 +49,7 @@ namespace MyServiceWeb.Services
         public async Task<IResponse> Get(long id)
         {
             IResponse response;
-
+            id = 5;
             try
             {
                 var res = await _context.Users.FindAsync(id);
@@ -72,12 +66,10 @@ namespace MyServiceWeb.Services
         public async Task<IResponse> GetAll(long id)
         {
             IResponse response;
-            
-            var res = new List<User>();
 
             try
             {
-                res = await _context.Users.ToListAsync();
+                var res = await _context.Users.ToListAsync();
                 response = GetResponse.Builder(0, "Todo ok", res);
                 
             }catch(Exception ex)

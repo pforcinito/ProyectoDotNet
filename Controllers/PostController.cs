@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using MyServiceWeb.Services;
 using MyServiceWeb.Interfaces;
 
 namespace MyServiceWeb.Controllers
@@ -12,9 +13,9 @@ namespace MyServiceWeb.Controllers
     [Route("[controller]")]
     public class PostController : ControllerBase
     {
-        private readonly IService _service;
+        private readonly IUserPostService _service;
 
-        public PostController(IService service) => _service = service;
+        public PostController(IUserPostService service) => _service = service;
 
         [HttpGet]
         //[Route("{id}")]
@@ -24,10 +25,6 @@ namespace MyServiceWeb.Controllers
             //long id = 5;
             //var users = await _context.Users.FindAsync(id);
             var user = await _service.Get(id);
-            if(user == null)
-            {
-                return Ok("no hay nada");
-            }
 
             return Ok(user);
 

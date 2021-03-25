@@ -9,7 +9,7 @@ namespace MyServiceWeb.Models
     {
         public long IdImage { get; set; }
         public long IdPublication { get; set; }
-        public string Image1 { get; set; }
+        public byte[] Image1 { get; set; }
 
         public virtual UserPost IdPublicationNavigation { get; set; }
     }
