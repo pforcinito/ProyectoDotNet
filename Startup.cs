@@ -12,6 +12,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.OpenApi.Models;
 using Microsoft.EntityFrameworkCore;
+using MyServiceWeb.Interfaces;
+using MyServiceWeb.Services;
+using MyServiceWeb.Models;
 
 namespace MyServiceWeb
 {
@@ -31,6 +34,10 @@ namespace MyServiceWeb
             services.AddDbContext<Models.MyABMContext>(options => {
                 options.UseSqlServer(Configuration.GetConnectionString("MyDB"));
             });
+
+            services.AddTransient<IService, UserService>();
+           //services.AddTransient<IService<UserPost>, UserPostService>();
+
             AddSwagger(services);
         }
 
@@ -42,13 +49,13 @@ namespace MyServiceWeb
 
                 options.SwaggerDoc(groupName, new OpenApiInfo
                 {
-                    Title = $"Foo {groupName}",
+                    Title = $"My App {groupName}",
                     Version = groupName,
-                    Description = "Foo API",
+                    Description = "MyApp API",
                     Contact = new OpenApiContact
                     {
-                        Name = "Foo Company",
-                        Email = string.Empty,
+                        Name = "Forci Company",
+                        Email = "pablo.forcinito@hotmail.com",
                         Url = new Uri("https://foo.com/"),
                     }
                 });

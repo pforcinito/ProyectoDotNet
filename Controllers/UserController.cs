@@ -1,9 +1,13 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MyServiceWeb.Models;
+using MyServiceWeb.Services;
+using MyServiceWeb.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using MyServiceWeb.ModelResponse;
+
 
 namespace MyServiceWeb.Controllers
 {
@@ -11,20 +15,17 @@ namespace MyServiceWeb.Controllers
     [Route("[controller]")]
     public class UserController : ControllerBase
     {
-        private  MyABMContext _context;
-        public UserController(MyABMContext context)
-        {
-            _context = context;
-        }
+        private readonly IService _service;
+
+        public UserController(IService service) => _service = service;
 
         [HttpGet]
-        [Route("{id}")]
-        public IActionResult GetUser(long id) {
+        //[Route("{id}")]
+        public async Task<IActionResult> GetUser(long id) {
 
+            IResponse response = await _service.Get(id);
 
-            var user = _context.Users.Find(id);
-            return Ok(user);
- 
+            return  Ok(response); 
         }
 
         //[HttpGet]
